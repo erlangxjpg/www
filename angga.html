@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<style>body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    background: #ff69b4;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ff69b4;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s;
+}
+.photo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+.description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.funny-section {
+    margin: 20px 0;
+}
+.heart {
+    position: absolute;
+    font-size: 2em;
+    color: #ff1493;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    0% { top: -50px; opacity: 1; }
+    100% { top: 100vh; opacity: 0; }
+}
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #ff1493;
+}
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background: #ff69b4;
+    color: white;
+    border-radius: 20px 20px 0 0;
+}</style>
+<body>
+    <header>
+        💖 Tentang Itann 💖
+    </header>
+    
+    <div class="container">
+        <img src="asset/WhatsApp Image 2025-11-13 at 13.10.04.jpeg" alt="Foto Pacar" class="photo"> 
+        
+        <div class="description">
+            <h2>Hai, ini tentang Intan! 😍</h2>
+            <p>Itann adalah Perempuan yang paling lucu dan manis di dunia! Dia selalu membuat hari saya penuh tawa dengan leluconnya yang konyol</p>
+            <p>Dia suka maraa dan aku suka melihat senyumnya yang seperti matahari terbit. Kita sering jalan-jalan sambil pegangan tangan, dan rasanya seperti mimpi! 🌟</p>
+            <p>Ingat ya, itann adalah yang terbaik! Kalau kamu baca ini, berarti aku lagi jatuh cinta berat kepada kamu. </p>
+        </div>
+        
+        <div class="funny-section">
+            <h3>Klik untuk Kejutan Lucu!</h3>
+            <button onclick="showSurprise()">Klik Saya! 🎉</button>
+            <p id="surprise" style="display: none; font-size: 1.5em; color: #ff1493;">Surprise! Kamu adalah Perempuan yang sangat cantik yang perna aku kenal makasi suda hadir di hidup aku 💕</p>
+        </div>
+    </div>
+    
+    <footer>
+        Dibuat oleh erlang ❤️ | 2025
+    </footer>
+    
+    <script>function showSurprise() {
+    document.getElementById('surprise').style.display = 'block';
+}
+
+// Animasi hati jatuh otomatis
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.innerHTML = '❤️';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+    document.body.appendChild(heart);
+    
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
+setInterval(createHeart, 1000); // Hati jatuh setiap detik</script>
+</body>
+</html>
